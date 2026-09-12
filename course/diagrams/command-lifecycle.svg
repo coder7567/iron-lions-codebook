@@ -1,0 +1,49 @@
+<svg viewBox="0 0 680 230" role="img" aria-labelledby="cl-title cl-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="cl-title">The lifecycle of a command</title>
+  <desc id="cl-desc">A command is scheduled, then initialize runs once. Each loop, execute runs and isFinished is checked. If isFinished is false, execute runs again on the next 20 millisecond loop. If it is true, end runs with interrupted false. If another command needs the same subsystem, or the command is canceled, end runs with interrupted true instead.</desc>
+  <defs>
+    <marker id="cl-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="d-ink"/>
+    </marker>
+  </defs>
+
+  <rect x="20" y="92" width="100" height="44" rx="6" class="d-soft"/>
+  <rect x="20" y="92" width="100" height="44" rx="6" class="d-line" stroke-width="1.5"/>
+  <text x="70" y="119" class="d-text d-mono" text-anchor="middle">schedule</text>
+
+  <rect x="150" y="92" width="110" height="44" rx="6" class="d-surface"/>
+  <rect x="150" y="92" width="110" height="44" rx="6" class="d-line" stroke-width="1.5"/>
+  <text x="205" y="112" class="d-text d-mono" text-anchor="middle">initialize()</text>
+  <text x="205" y="128" class="d-small" text-anchor="middle">once</text>
+
+  <rect x="290" y="92" width="110" height="44" rx="6" class="d-accent-soft"/>
+  <rect x="290" y="92" width="110" height="44" rx="6" class="d-accent-line" stroke-width="2"/>
+  <text x="345" y="112" class="d-text d-mono" text-anchor="middle">execute()</text>
+  <text x="345" y="128" class="d-small" text-anchor="middle">every loop</text>
+
+  <path d="M480 76 L528 114 L480 152 L432 114 z" class="d-surface"/>
+  <path d="M480 76 L528 114 L480 152 L432 114 z" class="d-line" stroke-width="1.5"/>
+  <text x="480" y="118" class="d-small d-mono" text-anchor="middle">isFinished()?</text>
+
+  <rect x="560" y="92" width="110" height="44" rx="6" class="d-surface"/>
+  <rect x="560" y="92" width="110" height="44" rx="6" class="d-line" stroke-width="1.5"/>
+  <text x="615" y="112" class="d-text d-mono" text-anchor="middle">end(false)</text>
+  <text x="615" y="128" class="d-small" text-anchor="middle">finished</text>
+
+  <rect x="290" y="176" width="110" height="44" rx="6" class="d-surface"/>
+  <rect x="290" y="176" width="110" height="44" rx="6" class="d-line" stroke-width="1.5"/>
+  <text x="345" y="196" class="d-text d-mono" text-anchor="middle">end(true)</text>
+  <text x="345" y="212" class="d-small" text-anchor="middle">interrupted</text>
+
+  <g class="d-line" stroke-width="1.5" fill="none">
+    <line x1="120" y1="114" x2="146" y2="114" marker-end="url(#cl-arrow)"/>
+    <line x1="260" y1="114" x2="286" y2="114" marker-end="url(#cl-arrow)"/>
+    <line x1="400" y1="114" x2="428" y2="114" marker-end="url(#cl-arrow)"/>
+    <line x1="528" y1="114" x2="556" y2="114" marker-end="url(#cl-arrow)"/>
+    <path d="M480 76 C480 40 345 40 345 88" marker-end="url(#cl-arrow)"/>
+    <line x1="345" y1="136" x2="345" y2="172" marker-end="url(#cl-arrow)"/>
+  </g>
+  <text x="412" y="46" class="d-small" text-anchor="middle">no: run execute again next loop</text>
+  <text x="542" y="106" class="d-small" text-anchor="middle">yes</text>
+  <text x="412" y="160" class="d-small">another command needs the subsystem, or cancel()</text>
+</svg>

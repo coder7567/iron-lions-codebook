@@ -1,0 +1,532 @@
+[
+  {
+    "id": "u01-hello",
+    "unit": "01-tools",
+    "title": "Hello, Iron Lions",
+    "level": 1,
+    "wpilib": false,
+    "starter": ["frc/training/u01/HelloIronLions.java"],
+    "test": ["frc/training/u01/HelloIronLionsTest.java"],
+    "solution": ["frc/training/u01/HelloIronLions.java"]
+  },
+  {
+    "id": "u02-units",
+    "unit": "02-java-basics",
+    "title": "Unit conversions like DriveConstants",
+    "level": 1,
+    "wpilib": false,
+    "starter": ["frc/training/u02/UnitConversions.java"],
+    "test": ["frc/training/u02/UnitConversionsTest.java"],
+    "solution": ["frc/training/u02/UnitConversions.java"]
+  },
+  {
+    "id": "u02-matchclock",
+    "unit": "02-java-basics",
+    "title": "The REBUILT match clock",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u02/MatchClock.java"],
+    "test": ["frc/training/u02/MatchClockTest.java"],
+    "solution": ["frc/training/u02/MatchClock.java"]
+  },
+  {
+    "id": "u02-loops",
+    "unit": "02-java-basics",
+    "title": "Sample statistics and a jam detector",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u02/SampleStats.java"],
+    "test": ["frc/training/u02/SampleStatsTest.java"],
+    "solution": ["frc/training/u02/SampleStats.java"]
+  },
+  {
+    "id": "u02-deadband",
+    "unit": "02-java-basics",
+    "title": "Joystick deadband and shaping",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u02/JoystickMath.java"],
+    "test": ["frc/training/u02/JoystickMathTest.java"],
+    "solution": ["frc/training/u02/JoystickMath.java"]
+  },
+  {
+    "id": "u03-setpoint",
+    "unit": "03-java-objects",
+    "title": "An immutable shooter setpoint",
+    "level": 1,
+    "wpilib": false,
+    "starter": ["frc/training/u03/ShooterSetpoint.java"],
+    "test": ["frc/training/u03/ShooterSetpointTest.java"],
+    "solution": ["frc/training/u03/ShooterSetpoint.java"]
+  },
+  {
+    "id": "u03-counter",
+    "unit": "03-java-objects",
+    "title": "An encapsulated jam counter",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u03/ConsecutiveCounter.java"],
+    "test": ["frc/training/u03/ConsecutiveCounterTest.java"],
+    "solution": ["frc/training/u03/ConsecutiveCounter.java"]
+  },
+  {
+    "id": "u03-canmap",
+    "unit": "03-java-objects",
+    "title": "A CAN ID map that refuses duplicates",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u03/CanMap.java", "frc/training/u03/CanDevice.java"],
+    "test": ["frc/training/u03/CanMapTest.java"],
+    "solution": ["frc/training/u03/CanMap.java"]
+  },
+  {
+    "id": "u03-rollermode",
+    "unit": "03-java-objects",
+    "title": "An enum that carries roller speeds",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u03/RollerMode.java"],
+    "test": ["frc/training/u03/RollerModeTest.java"],
+    "solution": ["frc/training/u03/RollerMode.java"]
+  },
+  {
+    "id": "u03-telemetry",
+    "unit": "03-java-objects",
+    "title": "Telemetry text for dashboards and alerts",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u03/TelemetryText.java"],
+    "test": ["frc/training/u03/TelemetryTextTest.java"],
+    "solution": ["frc/training/u03/TelemetryText.java"]
+  },
+  {
+    "id": "u03-gamedata",
+    "unit": "03-java-objects",
+    "title": "Game data and CAN IDs without crashing",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u03/GameData.java"],
+    "test": ["frc/training/u03/GameDataTest.java"],
+    "solution": ["frc/training/u03/GameData.java"]
+  },
+  {
+    "id": "u05-io",
+    "unit": "05-java-advanced",
+    "title": "A flywheel behind an IO interface",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u05/Flywheel.java", "frc/training/u05/FlywheelIOFake.java", "frc/training/u05/FlywheelIO.java"],
+    "test": ["frc/training/u05/FlywheelTest.java"],
+    "solution": ["frc/training/u05/Flywheel.java", "frc/training/u05/FlywheelIOFake.java"]
+  },
+  {
+    "id": "u05-triggers",
+    "unit": "05-java-advanced",
+    "title": "Trigger-style conditions with lambdas",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u05/Conditions.java"],
+    "test": ["frc/training/u05/ConditionsTest.java"],
+    "solution": ["frc/training/u05/Conditions.java"]
+  },
+  {
+    "id": "u05-records",
+    "unit": "05-java-advanced",
+    "title": "Vision observations as records",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u05/PoseObservation.java", "frc/training/u05/Observations.java"],
+    "test": ["frc/training/u05/PoseObservationTest.java"],
+    "solution": ["frc/training/u05/PoseObservation.java", "frc/training/u05/Observations.java"]
+  },
+  {
+    "id": "u05-interp",
+    "unit": "05-java-advanced",
+    "title": "A generic interpolating shot map",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u05/InterpolatingTable.java", "frc/training/u05/Shot.java", "frc/training/u05/Blendable.java"],
+    "test": ["frc/training/u05/InterpolatingTableTest.java"],
+    "solution": ["frc/training/u05/InterpolatingTable.java", "frc/training/u05/Shot.java"]
+  },
+  {
+    "id": "u05-streams",
+    "unit": "05-java-advanced",
+    "title": "Stream pipelines for IO data",
+    "level": 1,
+    "wpilib": false,
+    "starter": ["frc/training/u05/StreamDrills.java"],
+    "test": ["frc/training/u05/StreamDrillsTest.java"],
+    "solution": ["frc/training/u05/StreamDrills.java"]
+  },
+  {
+    "id": "u05-sampler",
+    "unit": "05-java-advanced",
+    "title": "A thread-safe sample buffer",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u05/SampleBuffer.java"],
+    "test": ["frc/training/u05/SampleBufferTest.java"],
+    "solution": ["frc/training/u05/SampleBuffer.java"]
+  },
+  {
+    "id": "u06-looptiming",
+    "unit": "06-robot-foundations",
+    "title": "Loop timing and mode changes",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u06/LoopStats.java", "frc/training/u06/ModeTracker.java"],
+    "test": ["frc/training/u06/LoopTimingTest.java"],
+    "solution": ["frc/training/u06/LoopStats.java", "frc/training/u06/ModeTracker.java"]
+  },
+  {
+    "id": "u06-flip",
+    "unit": "06-robot-foundations",
+    "title": "Flipping field positions for the red alliance",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u06/FieldFlip.java"],
+    "test": ["frc/training/u06/FieldFlipTest.java"],
+    "solution": ["frc/training/u06/FieldFlip.java"]
+  },
+  {
+    "id": "u06-angles",
+    "unit": "06-robot-foundations",
+    "title": "Angle wrapping without surprises",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u06/Angles.java"],
+    "test": ["frc/training/u06/AnglesTest.java"],
+    "solution": ["frc/training/u06/Angles.java"]
+  },
+  {
+    "id": "u06-aim-wpi",
+    "unit": "06-robot-foundations",
+    "title": "Turret aiming with WPILib geometry",
+    "level": 2,
+    "wpilib": true,
+    "starter": ["frc/training/u06/AimMath.java"],
+    "test": ["frc/training/u06/AimMathTest.java"],
+    "solution": ["frc/training/u06/AimMath.java"]
+  },
+  {
+    "id": "u06-encoders",
+    "unit": "06-robot-foundations",
+    "title": "Encoder offsets, gearing, and jumps",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u06/EncoderMath.java"],
+    "test": ["frc/training/u06/EncoderMathTest.java"],
+    "solution": ["frc/training/u06/EncoderMath.java"]
+  },
+  {
+    "id": "u07-scheduler",
+    "unit": "07-command-based",
+    "title": "Build a command scheduler",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u07/MiniScheduler.java", "frc/training/u07/MiniCommand.java", "frc/training/u07/MiniSubsystem.java"],
+    "test": ["frc/training/u07/MiniSchedulerTest.java"],
+    "solution": ["frc/training/u07/MiniScheduler.java"]
+  },
+  {
+    "id": "u07-groups",
+    "unit": "07-command-based",
+    "title": "Command groups from scratch",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u07/Groups.java", "frc/training/u07/MiniCommand.java"],
+    "test": ["frc/training/u07/GroupsTest.java"],
+    "solution": ["frc/training/u07/Groups.java"]
+  },
+  {
+    "id": "u07-bindings",
+    "unit": "07-command-based",
+    "title": "Trigger bindings and edges",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u07/ButtonBindings.java"],
+    "test": ["frc/training/u07/ButtonBindingsTest.java"],
+    "solution": ["frc/training/u07/ButtonBindings.java"]
+  },
+  {
+    "id": "u07-joystick",
+    "unit": "07-command-based",
+    "title": "Joystick drive math and the alliance flip",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u07/DriverMath.java"],
+    "test": ["frc/training/u07/DriverMathTest.java"],
+    "solution": ["frc/training/u07/DriverMath.java"]
+  },
+  {
+    "id": "u07-commands-wpi",
+    "unit": "07-command-based",
+    "title": "Test commands with the real scheduler",
+    "level": 2,
+    "wpilib": true,
+    "starter": ["frc/training/u07/Roller.java"],
+    "test": ["frc/training/u07/RollerTest.java"],
+    "solution": ["frc/training/u07/Roller.java"]
+  },
+  {
+    "id": "u08-basics",
+    "unit": "08-state-machines",
+    "title": "A shooter state machine",
+    "level": 1,
+    "wpilib": false,
+    "starter": ["frc/training/u08/ShooterStateMachine.java"],
+    "test": ["frc/training/u08/ShooterStateMachineTest.java"],
+    "solution": ["frc/training/u08/ShooterStateMachine.java"]
+  },
+  {
+    "id": "u08-superstructure",
+    "unit": "08-state-machines",
+    "title": "Superstructure requests, rumble, and alliance changes",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u08/SuperstructureLogic.java"],
+    "test": ["frc/training/u08/SuperstructureLogicTest.java"],
+    "solution": ["frc/training/u08/SuperstructureLogic.java"]
+  },
+  {
+    "id": "u08-intake",
+    "unit": "08-state-machines",
+    "title": "Jam detection and recovery",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u08/IntakeStateMachine.java"],
+    "test": ["frc/training/u08/IntakeStateMachineTest.java"],
+    "solution": ["frc/training/u08/IntakeStateMachine.java"]
+  },
+  {
+    "id": "u08-turret",
+    "unit": "08-state-machines",
+    "title": "Turret mode selection with F1 fixed",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u08/TurretModeSelector.java"],
+    "test": ["frc/training/u08/TurretModeSelectorTest.java"],
+    "solution": ["frc/training/u08/TurretModeSelector.java"]
+  },
+  {
+    "id": "u08-hub",
+    "unit": "08-state-machines",
+    "title": "The HUB shift schedule as a pure function",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u08/HubSchedule.java"],
+    "test": ["frc/training/u08/HubScheduleTest.java"],
+    "solution": ["frc/training/u08/HubSchedule.java"]
+  },
+  {
+    "id": "u09-pid",
+    "unit": "09-controls",
+    "title": "Write a PID controller",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u09/MiniPid.java"],
+    "test": ["frc/training/u09/MiniPidTest.java"],
+    "solution": ["frc/training/u09/MiniPid.java"]
+  },
+  {
+    "id": "u09-feedforward",
+    "unit": "09-controls",
+    "title": "Feedforward and the characterization fit",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u09/Feedforward.java"],
+    "test": ["frc/training/u09/FeedforwardTest.java"],
+    "solution": ["frc/training/u09/Feedforward.java"]
+  },
+  {
+    "id": "u09-profile",
+    "unit": "09-controls",
+    "title": "A trapezoid motion profile",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u09/TrapezoidProfileMath.java"],
+    "test": ["frc/training/u09/TrapezoidProfileMathTest.java"],
+    "solution": ["frc/training/u09/TrapezoidProfileMath.java"]
+  },
+  {
+    "id": "u09-guard",
+    "unit": "09-controls",
+    "title": "Guards that protect a mechanism",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u09/MechanismGuard.java"],
+    "test": ["frc/training/u09/MechanismGuardTest.java"],
+    "solution": ["frc/training/u09/MechanismGuard.java"]
+  },
+  {
+    "id": "u10-kinematics",
+    "unit": "10-swerve",
+    "title": "Swerve kinematics both ways",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u10/SwerveMath.java"],
+    "test": ["frc/training/u10/SwerveMathTest.java"],
+    "solution": ["frc/training/u10/SwerveMath.java"]
+  },
+  {
+    "id": "u10-optimize",
+    "unit": "10-swerve",
+    "title": "Optimizing a module setpoint",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u10/ModuleOptimizer.java"],
+    "test": ["frc/training/u10/ModuleOptimizerTest.java"],
+    "solution": ["frc/training/u10/ModuleOptimizer.java"]
+  },
+  {
+    "id": "u10-odometry",
+    "unit": "10-swerve",
+    "title": "Odometry from wheels and gyro",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u10/OdometryMath.java"],
+    "test": ["frc/training/u10/OdometryMathTest.java"],
+    "solution": ["frc/training/u10/OdometryMath.java"]
+  },
+  {
+    "id": "u11-inputs",
+    "unit": "11-logging",
+    "title": "Record and replay inputs",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u11/MiniLogger.java", "frc/training/u11/FlywheelInputs.java"],
+    "test": ["frc/training/u11/MiniLoggerTest.java"],
+    "solution": ["frc/training/u11/MiniLogger.java", "frc/training/u11/FlywheelInputs.java"]
+  },
+  {
+    "id": "u11-alert",
+    "unit": "11-logging",
+    "title": "Debounced alerts for the pit",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u11/AlertManager.java"],
+    "test": ["frc/training/u11/AlertManagerTest.java"],
+    "solution": ["frc/training/u11/AlertManager.java"]
+  },
+  {
+    "id": "u11-analyze",
+    "unit": "11-logging",
+    "title": "Answering questions with a log",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u11/LogAnalyzer.java"],
+    "test": ["frc/training/u11/LogAnalyzerTest.java"],
+    "solution": ["frc/training/u11/LogAnalyzer.java"]
+  },
+  {
+    "id": "u12-pathmath",
+    "unit": "12-autonomous",
+    "title": "Planning an auto that fits in 20 seconds",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u12/PathMath.java"],
+    "test": ["frc/training/u12/PathMathTest.java"],
+    "solution": ["frc/training/u12/PathMath.java"]
+  },
+  {
+    "id": "u12-autolint",
+    "unit": "12-autonomous",
+    "title": "Linting an autonomous routine",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u12/AutoLint.java"],
+    "test": ["frc/training/u12/AutoLintTest.java"],
+    "solution": ["frc/training/u12/AutoLint.java"]
+  },
+  {
+    "id": "u13-filter",
+    "unit": "13-vision",
+    "title": "Filtering vision measurements",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u13/VisionFilter.java"],
+    "test": ["frc/training/u13/VisionFilterTest.java"],
+    "solution": ["frc/training/u13/VisionFilter.java"]
+  },
+  {
+    "id": "u13-fusion",
+    "unit": "13-vision",
+    "title": "Fusing two cameras, two ways",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u13/PoseFusion.java"],
+    "test": ["frc/training/u13/PoseFusionTest.java"],
+    "solution": ["frc/training/u13/PoseFusion.java"]
+  },
+  {
+    "id": "u13-transform-wpi",
+    "unit": "13-vision",
+    "title": "From a tag sighting to a robot pose",
+    "level": 2,
+    "wpilib": true,
+    "starter": ["frc/training/u13/CameraTransforms.java"],
+    "test": ["frc/training/u13/CameraTransformsTest.java"],
+    "solution": ["frc/training/u13/CameraTransforms.java"]
+  },
+  {
+    "id": "u14-shotmap",
+    "unit": "14-shooting",
+    "title": "The interpolating shot map",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u14/ShotMap.java"],
+    "test": ["frc/training/u14/ShotMapTest.java"],
+    "solution": ["frc/training/u14/ShotMap.java"]
+  },
+  {
+    "id": "u14-aim",
+    "unit": "14-shooting",
+    "title": "Turret aiming, offsets, and the deadzone",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u14/TurretAim.java"],
+    "test": ["frc/training/u14/TurretAimTest.java"],
+    "solution": ["frc/training/u14/TurretAim.java"]
+  },
+  {
+    "id": "u14-sotm",
+    "unit": "14-shooting",
+    "title": "Shooting on the move",
+    "level": 3,
+    "wpilib": false,
+    "starter": ["frc/training/u14/ShootOnTheMove.java"],
+    "test": ["frc/training/u14/ShootOnTheMoveTest.java"],
+    "solution": ["frc/training/u14/ShootOnTheMove.java"]
+  },
+  {
+    "id": "u14-passing",
+    "unit": "14-shooting",
+    "title": "Passing targets and finding F4",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u14/PassingTargets.java"],
+    "test": ["frc/training/u14/PassingTargetsTest.java"],
+    "solution": ["frc/training/u14/PassingTargets.java"]
+  },
+  {
+    "id": "u15-averager",
+    "unit": "15-quality",
+    "title": "An average that actually averages",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u15/CurrentAverager.java"],
+    "test": ["frc/training/u15/CurrentAveragerTest.java"],
+    "solution": ["frc/training/u15/CurrentAverager.java"]
+  },
+  {
+    "id": "u15-budget",
+    "unit": "15-quality",
+    "title": "Tracking the loop budget",
+    "level": 2,
+    "wpilib": false,
+    "starter": ["frc/training/u15/LoopBudget.java"],
+    "test": ["frc/training/u15/LoopBudgetTest.java"],
+    "solution": ["frc/training/u15/LoopBudget.java"]
+  }
+]

@@ -1,0 +1,288 @@
+{
+  "title": "Iron Lions Codebook",
+  "subtitle": "Programming for FRC Team 967, from your first line of Java to shooting on the move",
+  "team": 967,
+  "repo": {
+    "name": "Rebuilt-2026",
+    "url": "https://github.com/FRC-IronLions-967/Rebuilt-2026",
+    "sha": "fe04405398eec6f862f07de3f670d015f8e9f7e5",
+    "localPath": "../Rebuilt-2026"
+  },
+  "units": [
+    {
+      "slug": "00-welcome",
+      "number": 0,
+      "title": "Welcome to 967 Software",
+      "blurb": "What Iron Lions programmers do, the 2026 robot, the REBUILT rules our code depends on, and how to use this course.",
+      "lessons": [
+        { "slug": "welcome-to-967", "title": "Welcome to Iron Lions Software", "minutes": 15 },
+        { "slug": "meet-the-2026-robot", "title": "Meet the 2026 Robot", "minutes": 25 },
+        { "slug": "rebuilt-for-programmers", "title": "REBUILT from a Programmer's Seat", "minutes": 25 },
+        { "slug": "how-to-learn-here", "title": "How to Learn (and Stay Safe) Here", "minutes": 15 },
+        { "slug": "placement-check", "title": "Placement Check", "minutes": 15 }
+      ],
+      "unitTest": false
+    },
+    {
+      "slug": "01-tools",
+      "number": 1,
+      "title": "Your Workshop: Tools and Setup",
+      "blurb": "Install the 2026 toolchain, clone and build the team code, run the simulator, and run your first tests.",
+      "lessons": [
+        { "slug": "files-folders-terminal", "title": "Files, Folders, and the Terminal", "minutes": 30 },
+        { "slug": "install-the-2026-toolchain", "title": "Install the 2026 FRC Toolchain", "minutes": 45 },
+        { "slug": "vs-code-and-wpilib-commands", "title": "VS Code and the WPILib Commands", "minutes": 25 },
+        { "slug": "get-the-team-code", "title": "Get the Team Code and Build It", "minutes": 30 },
+        { "slug": "first-simulation", "title": "Your First Simulation", "minutes": 30 },
+        { "slug": "exercises-project", "title": "Set Up the Exercises Project", "minutes": 20 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "02-java-basics",
+      "number": 2,
+      "title": "Java Basics",
+      "blurb": "Values, types, math with real units, decisions, loops, and methods, all explained with robot code.",
+      "lessons": [
+        { "slug": "how-java-runs", "title": "How a Java Program Runs", "minutes": 25 },
+        { "slug": "variables-and-types", "title": "Variables, Types, and Names", "minutes": 35 },
+        { "slug": "math-and-units", "title": "Math, Operators, and Units", "minutes": 40 },
+        { "slug": "decisions", "title": "Booleans and Decisions", "minutes": 40 },
+        { "slug": "loops", "title": "Loops", "minutes": 35 },
+        { "slug": "methods", "title": "Methods", "minutes": 40 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "03-java-objects",
+      "number": 3,
+      "title": "Objects and Organizing Code",
+      "blurb": "Classes, encapsulation, packages, collections, enums, strings, exceptions, and Optional.",
+      "lessons": [
+        { "slug": "classes-and-objects", "title": "Classes and Objects", "minutes": 45 },
+        { "slug": "encapsulation-static-final", "title": "Encapsulation, static, and final", "minutes": 35 },
+        { "slug": "packages-and-imports", "title": "Packages and Imports", "minutes": 20 },
+        { "slug": "arrays-and-collections", "title": "Arrays and Collections", "minutes": 45 },
+        { "slug": "enums", "title": "Enums", "minutes": 25 },
+        { "slug": "strings-and-formatting", "title": "Strings and Formatting", "minutes": 25 },
+        { "slug": "exceptions-null-optional", "title": "Exceptions, null, and Optional", "minutes": 35 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "04-git",
+      "number": 4,
+      "title": "Git and GitHub for a Robot Team",
+      "blurb": "Commits, branches, pull requests, merge conflicts, and the workflow that keeps event-day code safe.",
+      "lessons": [
+        { "slug": "why-version-control", "title": "Why Version Control", "minutes": 15 },
+        { "slug": "commits-and-history", "title": "Commits, Staging, and History", "minutes": 35 },
+        { "slug": "branches-and-merging", "title": "Branches and Merging", "minutes": 30 },
+        { "slug": "github-and-pull-requests", "title": "GitHub, Remotes, and Pull Requests", "minutes": 30 },
+        { "slug": "merge-conflicts", "title": "Merge Conflicts Without Panic", "minutes": 30 },
+        { "slug": "team-git-workflow", "title": "The 967 Git Workflow", "minutes": 25 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "05-java-advanced",
+      "number": 5,
+      "title": "Advanced Java in Robot Code",
+      "blurb": "Inheritance, interfaces, lambdas, records, generics, streams, threads, and annotations as our code uses them.",
+      "lessons": [
+        { "slug": "inheritance", "title": "Inheritance", "minutes": 30 },
+        { "slug": "interfaces-and-polymorphism", "title": "Interfaces and Polymorphism", "minutes": 40 },
+        { "slug": "lambdas-and-method-references", "title": "Lambdas, Suppliers, and Method References", "minutes": 45 },
+        { "slug": "records-and-nested-classes", "title": "Records and Nested Classes", "minutes": 25 },
+        { "slug": "generics", "title": "Generics", "minutes": 30 },
+        { "slug": "streams", "title": "Streams, Just Enough", "minutes": 20 },
+        { "slug": "threads-and-locks", "title": "Threads, Notifiers, and Locks", "minutes": 40 },
+        { "slug": "annotations-and-generated-code", "title": "Annotations and Generated Code", "minutes": 20 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "06-robot-foundations",
+      "number": 6,
+      "title": "The Robot: Hardware and WPILib Foundations",
+      "blurb": "The control system, the 20 ms loop, the Driver Station, units and coordinates, geometry, REVLib, and sensors.",
+      "lessons": [
+        { "slug": "control-system", "title": "The FRC Control System", "minutes": 35 },
+        { "slug": "robot-lifecycle", "title": "The Robot Lifecycle and the 20 ms Loop", "minutes": 35 },
+        { "slug": "driver-station-and-match-data", "title": "The Driver Station, FMS, and Match Data", "minutes": 30 },
+        { "slug": "units-and-coordinates", "title": "Units and Coordinate Systems", "minutes": 35 },
+        { "slug": "geometry", "title": "Geometry: Translations, Rotations, and Poses", "minutes": 45 },
+        { "slug": "revlib", "title": "Talking to Motors with REVLib 2026", "minutes": 50 },
+        { "slug": "sensors", "title": "Sensors on Our Robot", "minutes": 35 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "07-command-based",
+      "number": 7,
+      "title": "Command-Based Programming",
+      "blurb": "Subsystems, commands, the scheduler, triggers, RobotContainer wiring, joystick driving, and testing commands.",
+      "lessons": [
+        { "slug": "subsystems-commands-scheduler", "title": "Subsystems, Commands, and the Scheduler", "minutes": 35 },
+        { "slug": "subsystems-in-depth", "title": "Subsystems in Depth", "minutes": 30 },
+        { "slug": "commands-and-composition", "title": "Commands, Factories, and Composition", "minutes": 50 },
+        { "slug": "triggers-and-bindings", "title": "Triggers and Controller Bindings", "minutes": 35 },
+        { "slug": "robotcontainer", "title": "RobotContainer: Wiring the Robot Together", "minutes": 35 },
+        { "slug": "joystick-drive", "title": "Joystick Driving, Line by Line", "minutes": 35 },
+        { "slug": "testing-commands", "title": "Unit Testing Command-Based Code", "minutes": 35 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "08-state-machines",
+      "number": 8,
+      "title": "State Machines and the Superstructure",
+      "blurb": "Wanted and current states, the Superstructure, intake jam handling, turret modes, and hub-shift logic.",
+      "lessons": [
+        { "slug": "state-machine-basics", "title": "State Machine Basics", "minutes": 30 },
+        { "slug": "superstructure", "title": "The Superstructure Pattern", "minutes": 35 },
+        { "slug": "intake-state-machine", "title": "The Intake: Jams and Interlocks", "minutes": 35 },
+        { "slug": "turret-state-machine", "title": "The Turret: Zones and Modes", "minutes": 35 },
+        { "slug": "hub-shift-logic", "title": "Hub Shifts and Match-Aware Code", "minutes": 35 },
+        { "slug": "reviewing-state-machines", "title": "Reviewing State Machines: Real Bugs", "minutes": 35 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "09-controls",
+      "number": 9,
+      "title": "Control Theory for Mechanisms",
+      "blurb": "Closed-loop control, PID, feedforward, onboard control, motion profiles, SysId, tuning, and protecting hardware.",
+      "lessons": [
+        { "slug": "open-and-closed-loop", "title": "Open Loop, Closed Loop, and Bang-Bang", "minutes": 30 },
+        { "slug": "pid", "title": "PID From Scratch", "minutes": 50 },
+        { "slug": "feedforward", "title": "Feedforward", "minutes": 40 },
+        { "slug": "onboard-control", "title": "Control on the Motor Controller", "minutes": 35 },
+        { "slug": "motion-profiles", "title": "Motion Profiles and Rate Limits", "minutes": 35 },
+        { "slug": "sysid", "title": "Characterization with SysId", "minutes": 40 },
+        { "slug": "tuning-at-967", "title": "The 967 Tuning Workflow", "minutes": 35 },
+        { "slug": "protecting-mechanisms", "title": "Current Limits, Soft Limits, and Idle Modes", "minutes": 30 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "10-swerve",
+      "number": 10,
+      "title": "Swerve Drive",
+      "blurb": "Module mechanics, kinematics, module control, odometry, our drive architecture, characterization, and driver features.",
+      "lessons": [
+        { "slug": "swerve-overview", "title": "Why Swerve, and How a Module Works", "minutes": 25 },
+        { "slug": "kinematics", "title": "Swerve Kinematics", "minutes": 45 },
+        { "slug": "module-control", "title": "Controlling a Module", "minutes": 40 },
+        { "slug": "odometry", "title": "Odometry and Pose Estimation", "minutes": 45 },
+        { "slug": "drive-architecture", "title": "Inside Our Drive Subsystem", "minutes": 45 },
+        { "slug": "characterizing-swerve", "title": "Characterizing and Tuning Swerve", "minutes": 40 },
+        { "slug": "driving-well", "title": "Field-Relative Driving and Driver Features", "minutes": 30 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "11-logging",
+      "number": 11,
+      "title": "AdvantageKit, Simulation, and Debugging",
+      "blurb": "NetworkTables, logging inputs and outputs, deterministic replay, physics sim, AdvantageScope, dashboards, and debugging.",
+      "lessons": [
+        { "slug": "telemetry-and-logs", "title": "Telemetry, NetworkTables, and Logs", "minutes": 30 },
+        { "slug": "advantagekit-architecture", "title": "AdvantageKit: Inputs, Outputs, and IO Layers", "minutes": 45 },
+        { "slug": "replay", "title": "Deterministic Replay", "minutes": 35 },
+        { "slug": "simulation", "title": "Physics Simulation", "minutes": 35 },
+        { "slug": "advantagescope", "title": "AdvantageScope Skills", "minutes": 35 },
+        { "slug": "dashboards-tunables-alerts", "title": "Elastic, Tunables, and Alerts", "minutes": 30 },
+        { "slug": "debugging-method", "title": "A Debugging Method That Works", "minutes": 35 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "12-autonomous",
+      "number": 12,
+      "title": "Autonomous with PathPlanner",
+      "blurb": "Auto strategy, the PathPlanner app, PathPlannerLib integration, named commands, pathfinding, and testing autos.",
+      "lessons": [
+        { "slug": "auto-strategy", "title": "Autonomous Strategy in REBUILT", "minutes": 25 },
+        { "slug": "pathplanner-app", "title": "Paths and Autos in the PathPlanner App", "minutes": 40 },
+        { "slug": "pathplannerlib", "title": "PathPlannerLib in Our Code", "minutes": 40 },
+        { "slug": "named-commands-and-events", "title": "Named Commands and Event Timing", "minutes": 30 },
+        { "slug": "pathfinding", "title": "On-the-Fly Pathfinding", "minutes": 25 },
+        { "slug": "testing-autos", "title": "Testing and Tuning Autos", "minutes": 35 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "13-vision",
+      "number": 13,
+      "title": "Vision and Pose Estimation",
+      "blurb": "PhotonVision, AprilTags, 3D transforms, our vision pipeline, measurement trust, and vision simulation.",
+      "lessons": [
+        { "slug": "cameras-and-photonvision", "title": "Cameras, Coprocessors, and PhotonVision", "minutes": 35 },
+        { "slug": "apriltags-and-field-layout", "title": "AprilTags and the 2026 Field Layout", "minutes": 30 },
+        { "slug": "3d-transforms", "title": "3D Transforms", "minutes": 45 },
+        { "slug": "vision-pipeline", "title": "Our AprilTag Vision Pipeline", "minutes": 45 },
+        { "slug": "trusting-measurements", "title": "Standard Deviations and Trust", "minutes": 40 },
+        { "slug": "vision-sim-and-upgrades", "title": "Vision Simulation and Upgrade Paths", "minutes": 30 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "14-shooting",
+      "number": 14,
+      "title": "Aiming and Shooting",
+      "blurb": "Shot maps, turret aiming math, shooting on the move, passing, flywheel control, and collecting shot data.",
+      "lessons": [
+        { "slug": "shot-maps", "title": "Shot Maps and Interpolation", "minutes": 35 },
+        { "slug": "turret-aiming", "title": "Turret Aiming Math", "minutes": 45 },
+        { "slug": "shoot-on-the-move", "title": "Shooting on the Move", "minutes": 45 },
+        { "slug": "passing", "title": "Passing and Alliance-Aware Targets", "minutes": 30 },
+        { "slug": "flywheel-and-feeding", "title": "Flywheel Control and Feeding", "minutes": 35 },
+        { "slug": "collecting-shot-data", "title": "Collecting and Using Shot Data", "minutes": 30 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "15-quality",
+      "number": 15,
+      "title": "Engineering Quality",
+      "blurb": "Unit testing robot code, designing for testability, code review, style, loop performance, and safe refactoring.",
+      "lessons": [
+        { "slug": "unit-testing-robot-code", "title": "Unit Testing Robot Code", "minutes": 40 },
+        { "slug": "designing-for-testability", "title": "Designing for Testability", "minutes": 35 },
+        { "slug": "code-review", "title": "Code Review That Helps", "minutes": 30 },
+        { "slug": "style-and-documentation", "title": "Style, Naming, and Documentation", "minutes": 25 },
+        { "slug": "loop-performance", "title": "Loop Performance and Allocation", "minutes": 30 },
+        { "slug": "refactoring-safely", "title": "Refactoring Safely", "minutes": 30 }
+      ],
+      "unitTest": true
+    },
+    {
+      "slug": "16-season",
+      "number": 16,
+      "title": "Competition Season and Beyond",
+      "blurb": "The pit programmer runbook, the drive team, event debugging, preparing for 2027 Systemcore, capstones, and leadership.",
+      "lessons": [
+        { "slug": "pit-programmer-runbook", "title": "The Pit Programmer Runbook", "minutes": 30 },
+        { "slug": "working-with-the-drive-team", "title": "Working with the Drive Team", "minutes": 20 },
+        { "slug": "event-debugging", "title": "Debugging at an Event", "minutes": 30 },
+        { "slug": "systemcore-2027", "title": "Preparing for 2027 and Systemcore", "minutes": 30 },
+        { "slug": "capstones", "title": "Capstone Projects", "minutes": 20 },
+        { "slug": "leading-the-software-team", "title": "Leading the Software Team", "minutes": 20 }
+      ],
+      "unitTest": true
+    }
+  ],
+  "reference": [
+    { "slug": "robot-reference", "title": "967 Robot Reference" },
+    { "slug": "code-audit", "title": "Rebuilt-2026 Code Audit" },
+    { "slug": "exercise-catalog", "title": "Exercise Catalog" },
+    { "slug": "java-cheat-sheet", "title": "Java Cheat Sheet" },
+    { "slug": "command-based-cheat-sheet", "title": "Command-Based Cheat Sheet" },
+    { "slug": "git-cheat-sheet", "title": "Git Cheat Sheet" },
+    { "slug": "troubleshooting", "title": "Troubleshooting Guide" },
+    { "slug": "glossary", "title": "Glossary" },
+    { "slug": "resources", "title": "Resources and Further Reading" },
+    { "slug": "maintaining", "title": "Maintaining This Course" }
+  ]
+}

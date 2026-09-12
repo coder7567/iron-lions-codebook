@@ -1,0 +1,55 @@
+<svg viewBox="0 0 680 250" role="img" aria-labelledby="rl-title rl-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="rl-title">Three 20 millisecond robot loop cycles, the last one overrunning</title>
+  <desc id="rl-desc">Drawn to scale, 10 pixels per millisecond. In the first two cycles, robot code reads inputs, runs the command scheduler, and logs, then waits idle until the next 20 millisecond boundary. In the third cycle a blocking call makes the work last 26 milliseconds, crossing the next boundary, so the following cycle starts late: a loop overrun.</desc>
+  <text x="40" y="24" class="d-title">One robot loop every 20 ms, drawn to scale</text>
+
+  <!-- cycle 1: inputs 2 ms, scheduler 9 ms, logging 2 ms, idle 7 ms -->
+  <rect x="40" y="52" width="20" height="40" class="d-info" fill-opacity="0.55"/>
+  <rect x="60" y="52" width="90" height="40" class="d-accent" fill-opacity="0.35"/>
+  <rect x="150" y="52" width="20" height="40" class="d-pass" fill-opacity="0.45"/>
+  <rect x="170" y="52" width="70" height="40" class="d-soft"/>
+  <text x="105" y="77" class="d-small" text-anchor="middle">scheduler</text>
+  <text x="205" y="77" class="d-small" text-anchor="middle">idle</text>
+
+  <!-- cycle 2 -->
+  <rect x="240" y="52" width="20" height="40" class="d-info" fill-opacity="0.55"/>
+  <rect x="260" y="52" width="100" height="40" class="d-accent" fill-opacity="0.35"/>
+  <rect x="360" y="52" width="20" height="40" class="d-pass" fill-opacity="0.45"/>
+  <rect x="380" y="52" width="60" height="40" class="d-soft"/>
+  <text x="310" y="77" class="d-small" text-anchor="middle">scheduler</text>
+  <text x="410" y="77" class="d-small" text-anchor="middle">idle</text>
+
+  <!-- cycle 3: blocking call overruns -->
+  <rect x="440" y="52" width="20" height="40" class="d-info" fill-opacity="0.55"/>
+  <rect x="460" y="52" width="220" height="40" class="d-accent" fill-opacity="0.35"/>
+  <rect x="460" y="52" width="220" height="40" class="d-accent-line" stroke-width="2.5"/>
+  <text x="560" y="72" class="d-small" text-anchor="middle">scheduler + blocking</text>
+  <text x="560" y="86" class="d-small" text-anchor="middle">configure() call</text>
+
+  <!-- boundaries -->
+  <g class="d-line" stroke-width="1.5">
+    <line x1="40" y1="44" x2="40" y2="104"/>
+    <line x1="240" y1="44" x2="240" y2="104"/>
+    <line x1="440" y1="44" x2="440" y2="104"/>
+    <line x1="640" y1="44" x2="640" y2="104" stroke-dasharray="4 3"/>
+  </g>
+  <g class="d-small d-mono" text-anchor="middle">
+    <text x="40" y="120">0 ms</text>
+    <text x="240" y="120">20 ms</text>
+    <text x="440" y="120">40 ms</text>
+    <text x="640" y="120">60 ms</text>
+  </g>
+  <text x="640" y="140" class="d-small" text-anchor="end">next cycle cannot start until the work ends: loop overrun</text>
+
+  <!-- legend -->
+  <rect x="40" y="160" width="18" height="14" class="d-info" fill-opacity="0.55"/>
+  <text x="64" y="172" class="d-small">read DS data and IO inputs</text>
+  <rect x="240" y="160" width="18" height="14" class="d-accent" fill-opacity="0.35"/>
+  <text x="264" y="172" class="d-small">CommandScheduler.run(): subsystem periodic, triggers, commands</text>
+  <rect x="40" y="186" width="18" height="14" class="d-pass" fill-opacity="0.45"/>
+  <text x="64" y="198" class="d-small">AdvantageKit logging</text>
+  <rect x="240" y="186" width="18" height="14" class="d-soft"/>
+  <rect x="240" y="186" width="18" height="14" class="d-rule" stroke-width="1"/>
+  <text x="264" y="198" class="d-small">idle: waiting for the next 20 ms boundary</text>
+  <text x="40" y="232" class="d-small">Segment lengths are illustrative; AdvantageKit logs real timings under LoggedRobot/UserCodeMS and FullCycleMS.</text>
+</svg>

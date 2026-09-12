@@ -1,0 +1,73 @@
+<svg viewBox="0 0 660 440" role="img" aria-labelledby="rtv-title rtv-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="rtv-title">Top view of the 2026 robot showing swerve module CAN IDs and camera placement</title>
+  <desc id="rtv-desc">The front of the robot points right, which is the robot's plus X direction; plus Y points to the robot's left, which is up in this drawing. Four swerve modules sit on a 20 inch square: front left drive 1 and turn 2, front right drive 7 and turn 8, back left drive 3 and turn 4, back right drive 5 and turn 6. Camera April_Tag_2 is at the back left corner facing back and left; camera April_Tag_1 is at the back right corner facing back and right. Both are 9.3 inches up and tilted up 30 degrees.</desc>
+  <defs>
+    <marker id="rtv-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="d-ink"/>
+    </marker>
+    <marker id="rtv-arrow-accent" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="d-accent"/>
+    </marker>
+  </defs>
+
+  <!-- bumpers (PathPlanner size 0.806 m) and frame -->
+  <rect x="172" y="52" width="316" height="316" rx="12" class="d-accent-soft"/>
+  <rect x="172" y="52" width="316" height="316" rx="12" class="d-accent-line" stroke-width="3"/>
+  <rect x="204" y="84" width="252" height="252" rx="4" class="d-surface"/>
+  <rect x="204" y="84" width="252" height="252" rx="4" class="d-line" stroke-width="1.5"/>
+  <text x="506" y="210" class="d-title" text-anchor="middle" transform="rotate(90 506 210)" letter-spacing="3">FRONT</text>
+
+  <!-- 20 in dimension between module centers -->
+  <line x1="230" y1="70" x2="430" y2="70" class="d-rule" stroke-width="1.5" marker-start="url(#rtv-arrow)" marker-end="url(#rtv-arrow)"/>
+  <rect x="306" y="61" width="48" height="16" rx="3" class="d-accent-soft"/>
+  <text x="330" y="73" class="d-small d-mono" text-anchor="middle">20 in</text>
+
+  <!-- modules -->
+  <g>
+    <circle cx="230" cy="110" r="24" class="d-soft"/><circle cx="230" cy="110" r="24" class="d-line" stroke-width="1.5"/>
+    <rect x="214" y="104" width="32" height="12" rx="4" class="d-ink"/>
+    <text x="230" y="154" class="d-title" text-anchor="middle">BL</text>
+    <text x="230" y="170" class="d-small d-mono" text-anchor="middle">drive 3 · turn 4</text>
+  </g>
+  <g>
+    <circle cx="430" cy="110" r="24" class="d-soft"/><circle cx="430" cy="110" r="24" class="d-line" stroke-width="1.5"/>
+    <rect x="414" y="104" width="32" height="12" rx="4" class="d-ink"/>
+    <text x="430" y="154" class="d-title" text-anchor="middle">FL</text>
+    <text x="430" y="170" class="d-small d-mono" text-anchor="middle">drive 1 · turn 2</text>
+  </g>
+  <g>
+    <circle cx="230" cy="310" r="24" class="d-soft"/><circle cx="230" cy="310" r="24" class="d-line" stroke-width="1.5"/>
+    <rect x="214" y="304" width="32" height="12" rx="4" class="d-ink"/>
+    <text x="230" y="260" class="d-title" text-anchor="middle">BR</text>
+    <text x="230" y="276" class="d-small d-mono" text-anchor="middle">drive 5 · turn 6</text>
+  </g>
+  <g>
+    <circle cx="430" cy="310" r="24" class="d-soft"/><circle cx="430" cy="310" r="24" class="d-line" stroke-width="1.5"/>
+    <rect x="414" y="304" width="32" height="12" rx="4" class="d-ink"/>
+    <text x="430" y="260" class="d-title" text-anchor="middle">FR</text>
+    <text x="430" y="276" class="d-small d-mono" text-anchor="middle">drive 7 · turn 8</text>
+  </g>
+
+  <!-- center and NavX -->
+  <circle cx="330" cy="210" r="5" class="d-accent"/>
+  <text x="330" y="232" class="d-small" text-anchor="middle">robot center · NavX (MXP port)</text>
+
+  <!-- cameras at back corners, facing outward at ±135° -->
+  <rect x="192" y="72" width="18" height="12" rx="2" class="d-info"/>
+  <line x1="196" y1="76" x2="150" y2="30" class="d-info-line" stroke-width="2" marker-end="url(#rtv-arrow-accent)"/>
+  <text x="18" y="24" class="d-title">April_Tag_2</text>
+  <text x="18" y="40" class="d-small">back left · yaw +135° · tilted up 30°</text>
+
+  <rect x="192" y="336" width="18" height="12" rx="2" class="d-info"/>
+  <line x1="196" y1="344" x2="150" y2="390" class="d-info-line" stroke-width="2" marker-end="url(#rtv-arrow-accent)"/>
+  <text x="18" y="414" class="d-title">April_Tag_1</text>
+  <text x="18" y="430" class="d-small">back right · yaw −135° · tilted up 30°</text>
+
+  <!-- robot axes legend -->
+  <text x="562" y="300" class="d-small" text-anchor="middle">Robot axes</text>
+  <line x1="540" y1="380" x2="604" y2="380" class="d-line" stroke-width="2" marker-end="url(#rtv-arrow)"/>
+  <line x1="540" y1="380" x2="540" y2="318" class="d-line" stroke-width="2" marker-end="url(#rtv-arrow)"/>
+  <text x="608" y="384" class="d-small d-mono">+X</text>
+  <text x="548" y="326" class="d-small d-mono">+Y</text>
+  <text x="572" y="400" class="d-small" text-anchor="middle">+X front · +Y left</text>
+</svg>

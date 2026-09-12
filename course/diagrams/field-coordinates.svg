@@ -1,0 +1,52 @@
+<svg viewBox="0 0 680 400" role="img" aria-labelledby="fc-title fc-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="fc-title">WPILib field coordinates on the 2026 REBUILT field</title>
+  <desc id="fc-desc">Drawn to scale. The field is 16.541 meters long and 8.069 meters wide. The origin is at the bottom left corner on the blue alliance wall. Plus X points toward the red alliance wall and plus Y points up the page, which is left for a blue driver. The blue HUB center is at 4.626, 4.035 and the red HUB center is at 11.915, 4.034. Alliance zones end 4.03 meters from each wall. A point at 1, 6 on the blue side rotates through the field center to 15.541, 2.069 on the red side.</desc>
+
+  <!-- field: 600 px = 16.541 m (36.27 px/m); height 292.7 px = 8.069 m; origin at (40, 332.7) -->
+  <rect x="40" y="40" width="600" height="292.7" class="d-soft"/>
+  <rect x="40" y="40" width="600" height="292.7" class="d-line" stroke-width="2"/>
+  <rect x="34" y="40" width="6" height="292.7" class="d-info"/>
+  <rect x="640" y="40" width="6" height="292.7" class="d-accent"/>
+  <text x="24" y="186" class="d-small" text-anchor="middle" transform="rotate(-90 24 186)">BLUE ALLIANCE WALL</text>
+  <text x="660" y="186" class="d-small" text-anchor="middle" transform="rotate(90 660 186)">RED ALLIANCE WALL</text>
+
+  <!-- alliance zone boundaries at 4.03 m and 12.511 m -->
+  <line x1="186.2" y1="40" x2="186.2" y2="332.7" class="d-rule" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <line x1="493.8" y1="40" x2="493.8" y2="332.7" class="d-rule" stroke-width="1.5" stroke-dasharray="6 4"/>
+  <text x="113" y="56" class="d-small" text-anchor="middle">blue alliance zone</text>
+  <text x="567" y="56" class="d-small" text-anchor="middle">red alliance zone</text>
+
+  <!-- HUBs, 1.19 m square -->
+  <rect x="186.2" y="164.8" width="43.2" height="43.2" class="d-info-soft"/>
+  <rect x="186.2" y="164.8" width="43.2" height="43.2" class="d-info-line" stroke-width="2"/>
+  <circle cx="207.8" cy="186.4" r="3" class="d-info"/>
+  <text x="207.8" y="226" class="d-small d-mono" text-anchor="middle">(4.626, 4.035)</text>
+  <rect x="450.6" y="164.8" width="43.2" height="43.2" class="d-accent-soft"/>
+  <rect x="450.6" y="164.8" width="43.2" height="43.2" class="d-accent-line" stroke-width="2"/>
+  <circle cx="472.2" cy="186.4" r="3" class="d-accent"/>
+  <text x="472.2" y="226" class="d-small d-mono" text-anchor="middle">(11.915, 4.034)</text>
+
+  <!-- rotational symmetry example: (1, 6) rotates through center to (15.541, 2.069) -->
+  <line x1="76.3" y1="115.1" x2="603.7" y2="257.6" class="d-line" stroke-width="1.2" stroke-dasharray="3 4"/>
+  <circle cx="340" cy="186.4" r="4" class="d-ink"/>
+  <text x="348" y="180" class="d-small">field center</text>
+  <circle cx="76.3" cy="115.1" r="5" class="d-info"/>
+  <text x="86" y="108" class="d-small d-mono">(1, 6)</text>
+  <circle cx="603.7" cy="257.6" r="5" class="d-accent"/>
+  <text x="594" y="278" class="d-small d-mono" text-anchor="end">(15.541, 2.069)</text>
+
+  <!-- a robot at (2.5, 2.0) facing heading 0 -->
+  <rect x="120" y="250" width="22" height="22" rx="3" class="d-surface"/>
+  <rect x="120" y="250" width="22" height="22" rx="3" class="d-line" stroke-width="1.5"/>
+  <line x1="131" y1="261" x2="160" y2="261" class="d-line" stroke-width="2"/>
+  <path d="M160 256 L168 261 L160 266 z" class="d-ink"/>
+  <text x="131" y="290" class="d-small" text-anchor="middle">heading 0</text>
+
+  <!-- origin and axes -->
+  <circle cx="40" cy="332.7" r="5" class="d-ink"/>
+  <text x="46" y="352" class="d-small d-mono">origin (0, 0)</text>
+  <line x1="40" y1="372" x2="120" y2="372" class="d-line" stroke-width="2"/>
+  <path d="M120 367 L128 372 L120 377 z" class="d-ink"/>
+  <text x="134" y="376" class="d-small">+X toward red</text>
+  <text x="640" y="376" class="d-small d-mono" text-anchor="end">16.541 m × 8.069 m</text>
+</svg>

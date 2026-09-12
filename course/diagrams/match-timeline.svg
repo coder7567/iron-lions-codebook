@@ -1,0 +1,77 @@
+<svg viewBox="0 0 680 236" role="img" aria-labelledby="mt-title mt-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="mt-title">REBUILT match timeline and HUB activity by alliance</title>
+  <desc id="mt-desc">Drawn to scale over 160 seconds. AUTO lasts 20 seconds and both HUBs are active. TELEOP starts with a 10 second transition where both are active, then four 25 second shifts, then a 30 second end game where both are active. The alliance that scored more FUEL in AUTO has its HUB inactive in shifts 1 and 3 and active in shifts 2 and 4. The other alliance is active in shifts 1 and 3 and inactive in shifts 2 and 4.</desc>
+
+  <!-- segment names -->
+  <text x="77.5" y="58" class="d-small d-mono" text-anchor="middle">AUTO</text>
+  <text x="133.8" y="58" class="d-small d-mono" text-anchor="middle">TRANS</text>
+  <text x="199.4" y="58" class="d-small d-mono" text-anchor="middle">SHIFT 1</text>
+  <text x="293.1" y="58" class="d-small d-mono" text-anchor="middle">SHIFT 2</text>
+  <text x="386.9" y="58" class="d-small d-mono" text-anchor="middle">SHIFT 3</text>
+  <text x="480.6" y="58" class="d-small d-mono" text-anchor="middle">SHIFT 4</text>
+  <text x="583.8" y="58" class="d-small d-mono" text-anchor="middle">END GAME</text>
+  <text x="40" y="30" class="d-title">One match, drawn to scale (160 s)</text>
+
+  <!-- row A: alliance that won AUTO -->
+  <text x="40" y="82" class="d-text">Alliance that scored more FUEL in AUTO (game data letter)</text>
+  <g>
+    <rect x="40" y="88" width="75" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="115" y="88" width="37.5" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="152.5" y="88" width="93.75" height="30" class="d-soft"/>
+    <rect x="246.25" y="88" width="93.75" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="340" y="88" width="93.75" height="30" class="d-soft"/>
+    <rect x="433.75" y="88" width="93.75" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="527.5" y="88" width="112.5" height="30" class="d-pass" fill-opacity="0.28"/>
+    <text x="77.5" y="107" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="133.8" y="107" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="199.4" y="107" class="d-small d-mono" text-anchor="middle">OFF</text>
+    <text x="293.1" y="107" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="386.9" y="107" class="d-small d-mono" text-anchor="middle">OFF</text>
+    <text x="480.6" y="107" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="583.8" y="107" class="d-small d-mono" text-anchor="middle">ON</text>
+  </g>
+
+  <!-- row B: other alliance -->
+  <text x="40" y="140" class="d-text">Other alliance</text>
+  <g>
+    <rect x="40" y="146" width="75" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="115" y="146" width="37.5" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="152.5" y="146" width="93.75" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="246.25" y="146" width="93.75" height="30" class="d-soft"/>
+    <rect x="340" y="146" width="93.75" height="30" class="d-pass" fill-opacity="0.28"/>
+    <rect x="433.75" y="146" width="93.75" height="30" class="d-soft"/>
+    <rect x="527.5" y="146" width="112.5" height="30" class="d-pass" fill-opacity="0.28"/>
+    <text x="77.5" y="165" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="133.8" y="165" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="199.4" y="165" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="293.1" y="165" class="d-small d-mono" text-anchor="middle">OFF</text>
+    <text x="386.9" y="165" class="d-small d-mono" text-anchor="middle">ON</text>
+    <text x="480.6" y="165" class="d-small d-mono" text-anchor="middle">OFF</text>
+    <text x="583.8" y="165" class="d-small d-mono" text-anchor="middle">ON</text>
+  </g>
+
+  <!-- boundaries -->
+  <g class="d-rule" stroke-width="1">
+    <line x1="40" y1="66" x2="40" y2="184"/>
+    <line x1="115" y1="66" x2="115" y2="184"/>
+    <line x1="152.5" y1="66" x2="152.5" y2="184"/>
+    <line x1="246.25" y1="66" x2="246.25" y2="184"/>
+    <line x1="340" y1="66" x2="340" y2="184"/>
+    <line x1="433.75" y1="66" x2="433.75" y2="184"/>
+    <line x1="527.5" y1="66" x2="527.5" y2="184"/>
+    <line x1="640" y1="66" x2="640" y2="184"/>
+  </g>
+
+  <!-- match clock at each boundary -->
+  <g class="d-small d-mono" text-anchor="middle">
+    <text x="40" y="200">0:20</text>
+    <text x="115" y="200">2:20</text>
+    <text x="152.5" y="200">2:10</text>
+    <text x="246.25" y="200">1:45</text>
+    <text x="340" y="200">1:20</text>
+    <text x="433.75" y="200">0:55</text>
+    <text x="527.5" y="200">0:30</text>
+    <text x="640" y="200">0:00</text>
+  </g>
+  <text x="40" y="224" class="d-small">Clock shown at each boundary. AUTO counts down from 0:20; TELEOP counts down from 2:20.</text>
+</svg>

@@ -1,0 +1,15 @@
+# Gradle & Build outputs
+.gradle/
+build/
+bin/
+out/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# OS & Editor files
+.DS_Store
+Thumbs.db
+*.swp
+*~

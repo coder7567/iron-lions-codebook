@@ -1,0 +1,49 @@
+<svg viewBox="0 0 680 300" role="img" aria-labelledby="is-title is-desc" xmlns="http://www.w3.org/2000/svg">
+  <title id="is-title">The intake's states and jam recovery</title>
+  <desc id="is-desc">The intake sits in IDLE until something wants it intaking. While INTAKING, fifty consecutive loops of high current and low roller speed mean a jam, and if the arm is out the intake switches to REVERSING. After ten reversing loops the jam flag clears and it returns to INTAKING. A wanted state of PAUSED or IDLE moves the intake there from any state and clears the jam counters.</desc>
+  <defs>
+    <marker id="is-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="d-ink"/>
+    </marker>
+  </defs>
+
+  <rect x="30" y="115" width="130" height="48" rx="8" class="d-soft"/>
+  <rect x="30" y="115" width="130" height="48" rx="8" class="d-line" stroke-width="1.5"/>
+  <text x="95" y="138" class="d-text d-mono" text-anchor="middle">IDLE</text>
+  <text x="95" y="154" class="d-small" text-anchor="middle">arm to rest, rollers off</text>
+
+  <rect x="265" y="40" width="170" height="48" rx="8" class="d-accent-soft"/>
+  <rect x="265" y="40" width="170" height="48" rx="8" class="d-accent-line" stroke-width="2"/>
+  <text x="350" y="63" class="d-text d-mono" text-anchor="middle">INTAKING</text>
+  <text x="350" y="79" class="d-small" text-anchor="middle">arm out, rollers in</text>
+
+  <rect x="265" y="195" width="170" height="48" rx="8" class="d-warn-soft"/>
+  <rect x="265" y="195" width="170" height="48" rx="8" class="d-line" stroke-width="1.5"/>
+  <text x="350" y="218" class="d-text d-mono" text-anchor="middle">REVERSING</text>
+  <text x="350" y="234" class="d-small" text-anchor="middle">every roller backward</text>
+
+  <rect x="530" y="115" width="130" height="48" rx="8" class="d-soft"/>
+  <rect x="530" y="115" width="130" height="48" rx="8" class="d-line" stroke-width="1.5"/>
+  <text x="595" y="138" class="d-text d-mono" text-anchor="middle">PAUSED</text>
+  <text x="595" y="154" class="d-small" text-anchor="middle">rollers off, arm held</text>
+
+  <g class="d-line" stroke-width="1.5" fill="none">
+    <path d="M160 132 C210 120 225 90 261 70" marker-end="url(#is-arrow)"/>
+    <path d="M320 88 C305 120 305 160 320 191" marker-end="url(#is-arrow)"/>
+    <path d="M385 191 C400 160 400 120 385 92" marker-end="url(#is-arrow)"/>
+    <path d="M435 64 C480 80 500 100 528 124" marker-end="url(#is-arrow)"/>
+    <path d="M435 219 C480 200 500 180 528 156" marker-end="url(#is-arrow)"/>
+  </g>
+
+  <text x="168" y="104" class="d-small">wanted: INTAKING</text>
+  <text x="150" y="140" class="d-small" text-anchor="end"> </text>
+  <text x="255" y="130" class="d-small" text-anchor="end">jam: 50 loops of</text>
+  <text x="255" y="145" class="d-small" text-anchor="end">high current, low</text>
+  <text x="255" y="160" class="d-small" text-anchor="end">speed, arm out</text>
+  <text x="445" y="140" class="d-small">after 10</text>
+  <text x="445" y="155" class="d-small">reversing loops</text>
+  <text x="470" y="88" class="d-small">wanted: PAUSED</text>
+  <text x="470" y="212" class="d-small">wanted: PAUSED</text>
+
+  <text x="30" y="285" class="d-small">A new wanted state moves the intake anywhere and resets the jam counters. TESTING runs the INTAKING outputs with jam detection off.</text>
+</svg>
